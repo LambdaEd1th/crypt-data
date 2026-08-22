@@ -22,5 +22,7 @@ assert_eq!(decoded, raw);
 Use `encrypt_with_limit` and `decrypt_with_limit` when a resource uses a prefix
 limit other than 256 bytes. `inspect` validates the container without decrypting
 it, and `decrypt_wrapped` can be used when a `CRYPT_RES` header is mandatory.
+The conventional resource key is available as `DEFAULT_KEY` but callers can
+provide any byte key required by a specific game build.
 
 The project is licensed under `AGPL-3.0-or-later`.

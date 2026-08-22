@@ -22,6 +22,9 @@ pub const HEADER_SIZE: usize = MAGIC.len() + size_of::<u64>();
 /// Number of payload bytes encrypted by the conventional PopCap layout.
 pub const DEFAULT_LIMIT: usize = 0x100;
 
+/// Conventional key used by PopCap Crypt-Data resources.
+pub const DEFAULT_KEY: &[u8] = b"AS23DSREPLKL335KO4439032N8345NF";
+
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub struct CryptDataMetadata {
     /// Whether the input contains a `CRYPT_RES` wrapper.
